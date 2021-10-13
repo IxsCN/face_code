@@ -1,0 +1,43 @@
+DATA:
+  img_dir: '/media/yz/62C9BA4E5D826344/data/RAF-DB/basic/Image/aligned'
+  train_label_path: '/media/yz/62C9BA4E5D826344/data/RAF-DB/basic/EmoLabel/list_patition_label.txt'
+  val_label_path: '/media/yz/62C9BA4E5D826344/data/RAF-DB/basic/EmoLabel/list_patition_label.txt'
+  dataset_type: 'RAF_DB'
+
+TRAIN:
+  save_dir: '/media/yz/62C9BA4E5D826344/weights/fer/raf_db/scn/ce/'
+  batch_size: 600
+  num_train_epochs: 300
+
+  optimizer: 'adam'
+  warmup_steps: 200
+  learning_rate: 1e-3 #0.001  # 1e-4
+  momentum: 0.9
+  milestones: [2000, 4000]
+  lr_decay_gamma: 0.9
+  adam_epsilon: 1e-5
+  early_stop_n: 300
+  drop_rate: 0
+  weight_decay: 1e-5    # TODO. study later.
+
+  learner: 'scn'
+  beta: 0.7
+  relabel_epoch: 10
+  margin_1: 0.15
+  margin_2: 0.2
+
+MODEL:
+  model_name: 'scn_res18'
+  num_classes: 7
+#  pretrained: '/media/yz/62C9BA4E5D826344/pretrained_model/ijba_res18_naive.pth.tar'
+  pretrained: '/media/yz/62C9BA4E5D826344/pretrained_model/resnet18_110.pth'
+  checkpoint: ''
+
+
+LOSS:
+  type: 'CE'  # or 'CE_WLS'
+  alpha: [1.]  # on use if only ce
+  use_label_smooth: False
+
+SYSTEM:
+  NUM_WORKERS: 0

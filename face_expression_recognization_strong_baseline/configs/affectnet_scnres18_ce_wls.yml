@@ -1,0 +1,42 @@
+DATA:
+  img_dir: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated/Manually_Annotated_Images'
+  train_label_path: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated_file_lists/train.txt'
+  val_label_path: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated_file_lists/val.txt'
+  dataset_type: 'AffectNet'
+
+TRAIN:
+  save_dir: '/media/yz/62C9BA4E5D826344/weights/fer/affectnet/scn/ce/'
+  batch_size: 600
+  num_train_epochs: 50
+
+  optimizer: 'adam'
+  warmup_steps: 200
+  learning_rate: 0.01
+  momentum: 0.9
+  milestones: [2000, 4000]
+  lr_decay_gamma: 0.2
+  adam_epsilon: 1e-5
+  early_stop_n: 300
+  drop_rate: 0
+
+
+  use_scn_group: True
+  beta: 0.7
+  relabel_epoch: 10
+  margin_1: 0.15
+  margin_2: 0.2
+
+MODEL:
+  model_name: 'scn_res18'
+  num_classes: 8
+  pretrained: '/media/yz/62C9BA4E5D826344/pretrained_model/ijba_res18_naive.pth.tar'
+  checkpoint: ''
+
+
+LOSS:
+  type: 'CE_WLS'  # or 'CE_WLS'
+  alpha: [0.25, 0.5, 0.75, 1.0] # on use if only ce
+  use_label_smooth: False
+
+SYSTEM:
+  NUM_WORKERS: 0

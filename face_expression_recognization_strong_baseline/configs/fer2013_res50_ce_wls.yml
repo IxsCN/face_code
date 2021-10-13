@@ -1,0 +1,31 @@
+DATA:
+  train_label_path: '/home/mist/fer/fer2013.csv'#'/home/seven/data/fer_data/fer2013/Training'
+  val_label_path: '/home/seven/data/fer_data/fer2013/PublicTest'
+  dataset_type: 'FER2013'
+
+TRAIN:
+  save_dir: '/home/mist/fer/fer_2013/ce_wls/'
+  batch_size: 144
+  gradient_accumulation_steps: 1
+  num_train_epochs: 50
+  warmup_steps: 500
+  learning_rate: 1e-4  #4*1e-6
+  milestones: [2000, 4000]
+  lr_decay_gamma: 0.2
+  weight_decay: 0.0  #
+  adam_epsilon: 1e-5
+  early_stop_n: 5
+
+
+MODEL:
+  model_name: 'se_resnext50_32x4d'
+  num_classes: 7
+
+
+LOSS:
+  type: 'CE_WLS'  # or 'CE_WLS'
+  alpha: [1e-11, 0.125, 0.25, 0.375 ] #[1e-11, 0.25, 0.5, 0.75, 1.]  # on use if only ce
+  use_label_smooth: False
+
+SYSTEM:
+  NUM_WORKERS: 5

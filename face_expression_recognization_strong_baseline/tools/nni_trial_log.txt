@@ -1,0 +1,46 @@
+trial log create!
+write:
+steps: 0 
+write:
+all preds shape: (2794,)
+write:
+              precision    recall  f1-score   support
+
+           0       0.78      0.80      0.79       140
+           1       0.69      0.35      0.46       150
+           2       0.76      0.56      0.64        70
+           3       0.92      0.94      0.93      1096
+           4       0.79      0.85      0.82       620
+           5       0.78      0.83      0.81       420
+           6       0.85      0.83      0.84       298
+
+    accuracy                           0.84      2794
+   macro avg       0.80      0.74      0.76      2794
+weighted avg       0.84      0.84      0.84      2794
+
+write:
+val c_matrix:
+[[ 112    5    2    9    4    4    4]
+ [  12   52    0   15   35   27    9]
+ [   4    1   39    5    4    7   10]
+ [   5    3    2 1032   32   18    4]
+ [   3    9    0   32  527   35   14]
+ [   3    3    3   20   40  349    2]
+ [   4    2    5    9   26    5  247]]
+
+write:
+[0]  lr= 0.001000 avg_val_loss= 0.5761 avg_val_celoss= 0.5761  avg_val_wloss=0.0000 avg_val_acc=0.8440 
+write:
+
+best_val_total_loss:{'epoch': 0, 'value': 0.5761261581422084}
+write:
+
+best_val_celoss:{'epoch': 0, 'value': 0.5761261581422084}
+write:
+
+best_val_wloss:{'epoch': 0, 'value': 0.0}
+write:
+
+best_val_score:{'epoch': 0, 'value': 0.8439513242662849}
+write:
+====================================================================================================

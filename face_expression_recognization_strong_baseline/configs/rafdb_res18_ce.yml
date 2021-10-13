@@ -1,0 +1,44 @@
+DATA:
+  img_dir: '/media/yz/62C9BA4E5D826344/data/RAF-DB/basic/Image/aligned'
+  train_label_path: '/media/yz/62C9BA4E5D826344/data/RAF-DB/basic/EmoLabel/list_patition_label.txt'
+  val_label_path: '/media/yz/62C9BA4E5D826344/data/RAF-DB/basic/EmoLabel/list_patition_label.txt'
+  dataset_type: 'RAF_DB'
+  input_size: 224
+  crop_residual_pix: 16
+
+TRAIN:
+  save_dir: '/media/yz/62C9BA4E5D826344/weights/fer/raf_db/baseline/ce/'
+  batch_size: 240
+  num_train_epochs: 50
+
+  optimizer: 'adam'
+  warmup_steps: 600
+  learning_rate: 1e-2
+  momentum: 0.9
+  milestones: [2000, 4000]
+  lr_decay_gamma: 0.2
+  adam_epsilon: 1e-5
+  early_stop_n: 300
+  drop_rate: 0
+  weight_decay: 1e-4         # lr = lr * weight_decay
+
+  use_scn_group: False
+  beta: 0.7
+  relabel_epoch: 10
+  margin_1: 0.15
+  margin_2: 0.2
+
+MODEL:
+  model_name: 'res18'
+  num_classes: 7
+  pretrained: '/media/yz/62C9BA4E5D826344/pretrained_model/ijba_res18_naive.pth.tar'
+  checkpoint: ''
+
+
+LOSS:
+  type: 'CE'  # or 'CE_WLS'
+  alpha: [1.]  # on use if only ce
+  use_label_smooth: False
+
+SYSTEM:
+  NUM_WORKERS: 0

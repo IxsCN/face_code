@@ -1,0 +1,55 @@
+{
+    "batch_size": {"_type":"choice", "_value": [16, 32, 64, 128, 256]},
+    "lr":{"_type":"choice","_value":[0.0001, 0.001, 0.01]},
+    "alpha":{"_type":"choice","_value":[0.001, 0.0125, 0.0250, 0.0375]},
+    "w01":{"_type":"uniform","_value":[0, 1]},
+    "w02":{"_type":"uniform","_value":[0, 1]},
+    "w03":{"_type":"uniform","_value":[0, 1]},
+    "w04":{"_type":"uniform","_value":[0, 1]},
+    "w05":{"_type":"uniform","_value":[0, 1]},
+    "w06":{"_type":"uniform","_value":[0, 1]},
+   
+    "w12":{"_type":"uniform","_value":[0, 1]},
+    "w13":{"_type":"uniform","_value":[0, 1]},
+    "w14":{"_type":"uniform","_value":[0, 1]},
+    "w15":{"_type":"uniform","_value":[0, 1]},
+    "w16":{"_type":"uniform","_value":[0, 1]},
+    "w17":{"_type":"uniform","_value":[0, 1]},
+    "w18":{"_type":"uniform","_value":[0, 1]},
+    "w19":{"_type":"uniform","_value":[0, 1]},
+
+    "w23":{"_type":"uniform","_value":[0, 1]},
+    "w24":{"_type":"uniform","_value":[0, 1]},
+    "w25":{"_type":"uniform","_value":[0, 1]},
+    "w26":{"_type":"uniform","_value":[0, 1]},
+    "w27":{"_type":"uniform","_value":[0, 1]},
+    "w28":{"_type":"uniform","_value":[0, 1]},
+    "w29":{"_type":"uniform","_value":[0, 1]},
+
+    "w34":{"_type":"uniform","_value":[0, 1]},
+    "w35":{"_type":"uniform","_value":[0, 1]},
+    "w36":{"_type":"uniform","_value":[0, 1]},
+    "w37":{"_type":"uniform","_value":[0, 1]},
+    "w38":{"_type":"uniform","_value":[0, 1]},
+    "w39":{"_type":"uniform","_value":[0, 1]},
+
+    "w45":{"_type":"uniform","_value":[0, 1]},
+    "w46":{"_type":"uniform","_value":[0, 1]},
+    "w47":{"_type":"uniform","_value":[0, 1]},
+    "w48":{"_type":"uniform","_value":[0, 1]},
+    "w49":{"_type":"uniform","_value":[0, 1]},
+
+    "w56":{"_type":"uniform","_value":[0, 1]},
+    "w57":{"_type":"uniform","_value":[0, 1]},
+    "w58":{"_type":"uniform","_value":[0, 1]},
+    "w59":{"_type":"uniform","_value":[0, 1]},
+
+    "w67":{"_type":"uniform","_value":[0, 1]},
+    "w68":{"_type":"uniform","_value":[0, 1]},
+    "w69":{"_type":"uniform","_value":[0, 1]},
+
+    "w78":{"_type":"uniform","_value":[0, 1]},
+    "w79":{"_type":"uniform","_value":[0, 1]},
+
+    "w89":{"_type":"uniform","_value":[0, 1]}
+}

@@ -1,0 +1,1068 @@
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 285, in training
+    test_acc = self.test_and_save(epo)
+  File "../tools/simple_learner.py", line 60, in test_and_save
+    m, loss, celoss, wloss = self.val(self.val_dataloader)
+  File "../tools/simple_learner.py", line 370, in val
+    for batch in tqdm.tqdm(val_dataloader):
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/tqdm/std.py", line 1129, in __iter__
+    for obj in iterable:
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 519, in __next__
+    data = self._next_data()
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 559, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "../fer_strong_baseline/datasets/RAF_DB.py", line 196, in __getitem__
+    image = self.transform(image)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 67, in __call__
+    img = t(img)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torchvision/transforms/transforms.py", line 104, in __call__
+    return F.to_tensor(pic)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torchvision/transforms/functional.py", line 64, in to_tensor
+    raise TypeError('pic should be PIL Image or ndarray. Got {}'.format(type(pic)))
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 285, in training
+    test_acc = self.test_and_save(epo)
+  File "../tools/simple_learner.py", line 60, in test_and_save
+    m, loss, celoss, wloss = self.val(self.val_dataloader)
+  File "../tools/simple_learner.py", line 370, in val
+    for batch in tqdm.tqdm(val_dataloader):
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/tqdm/std.py", line 1129, in __iter__
+    for obj in iterable:
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 519, in __next__
+    data = self._next_data()
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 559, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "../fer_strong_baseline/datasets/RAF_DB.py", line 202, in __getitem__
+  File "../fer_strong_baseline/datasets/RAF_DB.py", line 202, in __getitem__
+  File "/home/yz/program/anaconda3/lib/python3.7/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/yz/program/anaconda3/lib/python3.7/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 285, in training
+    test_acc = self.test_and_save(epo)
+  File "../tools/simple_learner.py", line 60, in test_and_save
+    m, loss, celoss, wloss = self.val(self.val_dataloader)
+  File "../tools/simple_learner.py", line 373, in val
+    _, pred_loggits = self.model( batch_data['imgs'])
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 744, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "../fer_strong_baseline/models/gcn/GCN_net.py", line 43, in forward
+    x = self.model(x)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 744, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 744, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/yz/workspace/project/Gabor_CNN_PyTorch/gcn/layers/GConv.py", line 64, in forward
+    self.padding, self.dilation, self.groups)
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 286, in training
+    test_acc = self.test_and_save(epo)
+  File "../tools/simple_learner.py", line 61, in test_and_save
+    m, loss, celoss, wloss = self.multi_crop_val(self.val_dataloader)
+  File "../tools/simple_learner.py", line 422, in multi_crop_val
+    _, pred_loggits =  self.model(data)
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 286, in training
+    test_acc = self.test_and_save(epo)
+  File "../tools/simple_learner.py", line 61, in test_and_save
+    m, loss, celoss, wloss = self.multi_crop_val(self.val_dataloader)
+  File "../tools/simple_learner.py", line 434, in multi_crop_val
+    eval_loss += loss.mean().item()
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 285, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 175, in train_epoch
+    train_loss, train_celoss, train_wloss, acc, pred, label = self.step(self.step_n, batch_data)
+  File "../tools/simple_learner.py", line 330, in step
+    loggits = loggits.detach().cpu().numpy()
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 285, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 257, in train_epoch
+    c_matirx = confusion_matrix(epoch_label, epoch_pred)  # FIXME
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py", line 276, in confusion_matrix
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/sklearn/metrics/_classification.py", line 98, in _check_targets
+    raise ValueError("{0} is not supported".format(y_type))
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 288, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 261, in train_epoch
+    self.logger.write("train c_matrix:\n", c_matirx, '\n')
+  File "../tools/simple_learner.py", line 261, in train_epoch
+    self.logger.write("train c_matrix:\n", c_matirx, '\n')
+  File "/home/yz/program/anaconda3/lib/python3.7/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/yz/program/anaconda3/lib/python3.7/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+  File "train.py", line 375, in <module>
+    train(cfg, args)
+  File "train.py", line 330, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 288, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 175, in train_epoch
+    train_loss, train_celoss, train_wloss, acc, pred, label = self.step(self.step_n, batch_data)
+  File "../tools/simple_learner.py", line 329, in step
+    loss.backward()
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/tensor.py", line 233, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/autograd/__init__.py", line 147, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+  File "train.py", line 376, in <module>
+    train(cfg, args)
+  File "train.py", line 267, in train
+    optimizer = torch.optim.SGD(params, cfg.TRAIN.learning_rate,
+  File "train.py", line 376, in <module>
+    train(cfg, args)
+  File "train.py", line 331, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 289, in training
+    test_acc = self.test_and_save(epo)
+  File "../tools/simple_learner.py", line 60, in test_and_save
+    m, loss, celoss, wloss = self.val(self.val_dataloader)
+  File "../tools/simple_learner.py", line 377, in val
+    _, pred_loggits = self.model( batch_data['imgs'])
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 744, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "../fer_strong_baseline/models/gcn/GCN_net.py", line 43, in forward
+    x = self.model(x)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 744, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/yz/program/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 744, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/yz/workspace/project/Gabor_CNN_PyTorch/gcn/layers/GConv.py", line 64, in forward
+    self.padding, self.dilation, self.groups)
+  File "train.py", line 377, in <module>
+    train(cfg, args)
+  File "train.py", line 332, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 288, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 175, in train_epoch
+    train_loss, train_celoss, train_wloss, acc, pred, label = self.step(self.step_n, batch_data)
+  File "../tools/simple_learner.py", line 333, in step
+    loggits = loggits.detach().cpu().numpy()
+  File "train.py", line 417, in <module>
+    os.makedirs(cfg.TRAIN.save_dir)
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  [Previous line repeated 4 more times]
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 223, in makedirs
+    mkdir(name, mode)
+  File "train.py", line 417, in <module>
+    os.makedirs(cfg.TRAIN.save_dir)
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  [Previous line repeated 4 more times]
+  File "/home/seven/anaconda3/lib/python3.7/os.py", line 223, in makedirs
+    mkdir(name, mode)
+  File "train.py", line 421, in <module>
+    train(cfg, args)
+  File "train.py", line 216, in train
+    for x in ['train', 'test']}
+  File "train.py", line 216, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 375, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 299, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 171, in train_epoch
+    for batch in data_iter:
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/tqdm/std.py", line 1081, in __iter__
+    for obj in iterable:
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 169, in __getitem__
+    sample = self.loader(path)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 206, in default_loader
+    return pil_loader(path)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 186, in pil_loader
+    with open(path, 'rb') as f:
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 375, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 299, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 171, in train_epoch
+    for batch in data_iter:
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/tqdm/std.py", line 1081, in __iter__
+    for obj in iterable:
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 169, in __getitem__
+    sample = self.loader(path)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 206, in default_loader
+    return pil_loader(path)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 186, in pil_loader
+    with open(path, 'rb') as f:
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+  File "train.py", line 422, in <module>
+    train(cfg, args)
+  File "train.py", line 375, in train
+    learner.training(train_loader, val_loader, epoches=cfg.TRAIN.num_train_epochs)
+  File "../tools/simple_learner.py", line 299, in training
+    self.train_epoch(epo)
+  File "../tools/simple_learner.py", line 175, in train_epoch
+    train_loss, train_celoss, train_wloss, acc, pred, label = self.step(self.step_n, batch_data)
+  File "../tools/simple_learner.py", line 344, in step
+    loggits = loggits.detach().cpu().numpy()
+  File "/home/seven/workspace/face_expression_recognization_strong_baseline/tools/train.py", line 422, in <module>
+    train(cfg, args)
+  File "/home/seven/workspace/face_expression_recognization_strong_baseline/tools/train.py", line 217, in train
+    for x in ['train', 'test']}
+  File "/home/seven/workspace/face_expression_recognization_strong_baseline/tools/train.py", line 217, in <dictcomp>
+    for x in ['train', 'test']}
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 247, in __init__
+    is_valid_file=is_valid_file)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 126, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/seven/anaconda3/lib/python3.7/site-packages/torchvision/datasets/folder.py", line 155, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]

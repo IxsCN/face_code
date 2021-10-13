@@ -1,0 +1,44 @@
+DATA:
+  img_dir: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated/Face_Images_Small'
+  # img_dir: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated/Manually_Annotated_Images'
+  train_label_path: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated_file_lists/training.csv'
+  val_label_path: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated_file_lists/validation.csv'
+  dataset_type: 'AffectNet'
+
+TRAIN:
+  save_dir: '/media/yz/62C9BA4E5D826344/weights/fer/affectnet/scn/ce/'
+  batch_size: 600
+  num_train_epochs: 300
+
+  optimizer: 'adam'
+  warmup_steps: 200
+  learning_rate: 1e-3  # 2e-3 #0.001  # 1e-4
+  momentum: 0.9
+  milestones: [2000, 4000]
+  lr_decay_gamma: 0.9
+  adam_epsilon: 1e-5
+  early_stop_n: 300
+  drop_rate: 0
+  weight_decay: 1e-4 # 1e-5 #1e-4    # TODO. study later.
+
+  learner: 'simple'  # 'scn'  scn learner cannot work yet
+  beta: 0.7
+  relabel_epoch: 10
+  margin_1: 0.15
+  margin_2: 0.2
+
+MODEL:
+  model_name: 'scn_res18'
+  num_classes: 8
+  pretrained: '/media/yz/62C9BA4E5D826344/pretrained_model/ijba_res18_naive.pth.tar'
+  # pretrained: '/media/yz/62C9BA4E5D826344/pretrained_model/resnet18_110.pth'
+  checkpoint: ''
+
+LOSS:
+  type: "CE" #'CE'  # or 'CE_WLS'
+  alpha: 0.0125  # on use if only ce
+  use_label_smooth: False
+  use_update_w: True
+
+SYSTEM:
+  NUM_WORKERS: 0

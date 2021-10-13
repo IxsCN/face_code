@@ -1,0 +1,30 @@
+DATA:
+  img_dir: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated/Manually_Annotated_Images'
+  train_label_path: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated_file_lists/train.txt'
+  val_label_path: '/media/yz/62C9BA4E5D826344/data/AffectNet/Manually_Annotated_file_lists/val.txt'
+  dataset_type: 'AffectNet'
+
+TRAIN:
+  save_dir: '/media/yz/62C9BA4E5D826344/weights/fer/affectnet/base/ce_wls/'
+  batch_size: 72
+  gradient_accumulation_steps: 1
+  num_train_epochs: 30
+  warmup_steps: 500
+  learning_rate: 1e-4  #4*1e-6
+  milestones: [2000, 4000]
+  lr_decay_gamma: 0.2
+  weight_decay: 0.0  #
+  adam_epsilon: 1e-5
+  early_stop_n: 3
+
+MODEL:
+  model_name: 'res18'
+  num_classes: 8
+
+LOSS:
+  type: 'CE_WLS'  # or 'CE_WLS'
+  alpha:  [0.25, 0.5, 0.75, 1.0]  # on use if only ce
+  use_label_smooth: False
+
+SYSTEM:
+  NUM_WORKERS: 7

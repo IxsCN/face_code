@@ -1,0 +1,12 @@
+{
+  "center_ind": [-1],
+  "norm_ratio": 0.4,
+  "fill_with_value": 1,
+  "fill_value": 255,
+  "image_info": {
+    "height": 112,
+    "width": 96, 
+    "is_color": 1
+  }
+}
+
